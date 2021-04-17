@@ -1,10 +1,13 @@
 # Carputer
-A raspberry pi interface for my ford escape
+A raspberry pi interface for my 2012 ford escape
 
 NOTE: I am in the process of a total re-write of the code. Therfore most of the code is not what I am currently developing. I am hopeing to uplad the current code and remove this code in the near future. 
 
 Purpouse:
-To give me navigation, OBDII Codes and hopfully errors, Audio system.
+To give me navigation (as well as location), OBDII Codes and hopfully errors, Audio system, relays for auxilery lights.
+
+Future Features:
+I would like to add controll for a linuar actuator to extract and retract my solar pannels. 
 
 I am doing this project as my vehicle doesn't have a GPS system. So I decided to do my own and decided to add other functinality. I take this vehicle off into the backwoods often GPS functinaity can be handy. I will also be adding features to controll other extra electronics I have added to my vehicle, such as work lights, amber warning lights, solar pannels, and the Auxillery battery. 
 
