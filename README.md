@@ -1,6 +1,8 @@
 # Carputer
 A raspberry pi interface for my ford escape
 
+NOTE: I am in the process of a total re-write of the code. Therfore most of the code is not what I am currently developing. I am hopeing to uplad the current code and remove this code in the near future. 
+
 Purpouse:
 To give me navigation, OBDII Codes and hopfully errors, Audio system.
 
@@ -12,5 +14,6 @@ start.sh - a shell script that starts the various parts of this project - the me
 
 vlc.py - this is just to start vlc
             - could probably just put this in the start.sh file
+            - or posibly just startup on launch. 
 
 main.py - this is the main file that gets the data and displays it with a crapy gui -- but at least it is working :) -- It also contains the switches for my 2 work lights via buttons on the gui. 
