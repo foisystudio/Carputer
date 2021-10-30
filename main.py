@@ -10,6 +10,7 @@ from subprocess import check_call
 
 ###Set Defintions###
 
+# Check the stsus of buttons --Deprechiated with GUI buttons
 def checkphysicalbutton():
     button.when_pressed = capture
     power.when_held = shutdown
@@ -73,6 +74,7 @@ def code4():
     cmd = obd.commands.COOLANT_TEMP # select an OBD command (sensor)
     response = connection.query(cmd)
     res4.value = str(response.value.magnitude)
+    
 def code5():
     cmd = obd.commands.INTAKE_PRESSURE # select an OBD command (sensor)
     response = connection.query(cmd)
@@ -103,6 +105,7 @@ def code10():
     response = connection.query(cmd)
     res10.value = str(response.value.magnitude)
 
+#Save GPS data to a text file       
 def gs_save():
     if gps_log:
         nx = gpsd.next()
@@ -157,13 +160,13 @@ def get_waypoint():
         gps_lbl_resp_time.value = str(time)
     led_write.off()
 
-def set_waypoint():
+def set_waypoint(): #Need to finish this off
     if gps_log == False:
         gps_log = True
     if gps_log:
         gps_log = False
 
-###Gloabal VARs
+### Gloabal VARs ###
 
 now = datetime.now() 
 today = now.strftime("%m%d%Y%H%M%S")
